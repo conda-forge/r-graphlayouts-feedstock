@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphlayouts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphlayouts/graphlayouts_{{ version }}.tar.gz
-  sha256: 83f61ce07580c5a64c7044c12b20d98ccf138c7e78ff12855cdfc206e1fab10d
+  sha256: 8097d34cd4ae86fd2b806970513869c62305d54cdd878be64fe7ce33aa0940d1
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -50,13 +50,12 @@ test:
 about:
   home: https://github.com/schochastics/graphlayouts
   license: MIT
-  summary: Several new layout algorithms to visualize networks are provided which are not part
-    of 'igraph'.  Most are based on the concept of stress majorization by Gansner et
-    al. (2004) <doi:10.1007/978-3-540-31843-9_25>.  Some more specific algorithms allow
-    to emphasize hidden group structures in networks or focus on specific nodes.
+  summary: Several new layout algorithms to visualize networks are provided which are not part of 'igraph'.  Most are based on the concept of stress majorization
+    by Gansner et al. (2004) <doi:10.1007/978-3-540-31843-9_25>.  Some more specific algorithms allow to emphasize hidden group structures in networks or focus on
+    specific nodes.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
