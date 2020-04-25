@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphlayouts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphlayouts/graphlayouts_{{ version }}.tar.gz
-  sha256: 8097d34cd4ae86fd2b806970513869c62305d54cdd878be64fe7ce33aa0940d1
+  sha256: 20464b60376d9f8d522eec6a7495054b1715e4919f10e9a049868d8866398c9e
 
 build:
   merge_build_host: true  # [win]
@@ -25,11 +25,11 @@ requirements:
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rcpp
@@ -37,7 +37,7 @@ requirements:
     - r-igraph
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-rcpp
     - r-rcpparmadillo
     - r-igraph
@@ -50,9 +50,8 @@ test:
 about:
   home: https://github.com/schochastics/graphlayouts
   license: MIT
-  summary: Several new layout algorithms to visualize networks are provided which are not part of 'igraph'.  Most are based on the concept of stress majorization
-    by Gansner et al. (2004) <doi:10.1007/978-3-540-31843-9_25>.  Some more specific algorithms allow to emphasize hidden group structures in networks or focus on
-    specific nodes.
+  summary: Several new layout algorithms to visualize networks are provided which are not part of 'igraph'.  Most are based on the concept of stress majorization by Gansner et al. (2004) <doi:10.1007/978-3-540-31843-9_25>.  Some more specific algorithms allow to emphasize hidden group structures in networks or focus on specific
+    nodes.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
