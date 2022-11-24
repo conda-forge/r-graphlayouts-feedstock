@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphlayouts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphlayouts/graphlayouts_{{ version }}.tar.gz
-  sha256: f9e4e5d794b4d1c6eba962490b3220d09b73e10893f5fa3be210240bfc654421
+  sha256: 778d8f7e190b05d0dbbaa7e6dbdfc0b8fef3c83b71333a6fa89926e6c04690fd
 
 build:
   merge_build_host: true  # [win]
