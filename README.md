@@ -1,11 +1,22 @@
+About r-graphlayouts-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-graphlayouts-feedstock/blob/main/LICENSE.txt)
+
 About r-graphlayouts
-====================
+--------------------
 
 Home: https://github.com/schochastics/graphlayouts
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-graphlayouts-feedstock/blob/main/LICENSE.txt)
+Summary: Several new layout algorithms to visualize networks are provided which are not part of 'igraph'.  Most are based on the concept of stress majorization by Gansner et al. (2004) <doi:10.1007/978-3-540-31843-9_25>.  Some more specific algorithms allow to emphasize hidden group structures in networks or focus on specific nodes.
+About r-graphlayouts
+--------------------
+
+Home: https://github.com/schochastics/graphlayouts
+
+Package license: MIT
 
 Summary: Several new layout algorithms to visualize networks are provided which are not part of 'igraph'.  Most are based on the concept of stress majorization by Gansner et al. (2004) <doi:10.1007/978-3-540-31843-9_25>.  Some more specific algorithms allow to emphasize hidden group structures in networks or focus on specific nodes.
 
