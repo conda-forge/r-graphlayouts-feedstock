@@ -1,4 +1,4 @@
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphlayouts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphlayouts/graphlayouts_{{ version }}.tar.gz
-  sha256: 96b5328201e9e448a5bc0cf90d0730658154fb226c08d99e3cfe2a73db767305
+  sha256: 89cb2d85f709ce541dd14e91548416261b21d75d1802bdbf29f489e71be3a696
 
 build:
   number: 0
